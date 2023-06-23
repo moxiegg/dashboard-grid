@@ -179,6 +179,7 @@ svg{
     display:grid;
     grid-template-rows:auto 1fr;
     row-gap:15px;
+    padding-bottom:20px;
 }
 .trending-content{
     display:grid;
