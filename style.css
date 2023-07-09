@@ -131,22 +131,49 @@ svg{
     font-weight: 700;
     font-size: 22px;
 }
+
 .project{
     display:grid;
     grid-template-rows: auto 4fr 4fr 4fr;
     grid-template-columns: 1fr 1fr;
     gap:15px;
     grid-row:1/3;
-    justify-items: start;
+    margin-bottom:20px;
 }
 .project .content-title{
     grid-column: 1/3;
 }
 .project .card{
     display:grid;
-    background-color: aquamarine;
-}
+    grid-template-rows: 2fr 3fr 3fr;
+    border-radius:10px;
+    border-left:10px solid #0ea5e9;
+    background-color: white;
+    padding:20px;
 
+}
+.project-title{
+    font-weight:bold;
+    align-self:end;
+}
+.project-text{
+    font-size:15px;
+}
+.project-actions{
+    display:grid;
+    justify-content: right;
+    grid-template-columns: repeat(3,auto);
+    gap:15px;
+    align-self: center;
+}
+.project-icon{
+    justify-self: right;
+    cursor:pointer;
+    align-self: center;
+}
+.project-icon svg{
+    fill:black;
+}
 .announcement{
     display:grid;
     grid-template-rows:auto repeat(2,auto);
@@ -206,6 +233,4 @@ svg{
 .trending .content-title{
     grid-column:1/3;
 }
-
-
 
